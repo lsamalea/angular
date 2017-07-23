@@ -45,6 +45,11 @@ import {Subject} from 'rxjs/Subject';
  * The events payload can be accessed by the parameter `$event` on the components output event
  * handler:
  *
+ *  Jachel- COMMENT: how is call this method... is not clear .. Is this method executed as a subscription of this Event Emiter.... 
+    Does this means that this element could have several subscribers to the same event? I mean the same component instance.
+    I think that should be another way to specified an immutable output stream of a component. 
+    Maybe $event should be event$.
+    
  * ```
  * <zippy (open)="onOpen($event)" (close)="onClose($event)"></zippy>
  * ```
